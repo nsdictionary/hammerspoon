@@ -7,12 +7,12 @@ function vim_esc()
         hs.keycodes.currentSourceID(inputEnglish)
     end
 
-    hs.eventtap.keyStroke({''}, 'escape')
+    hs.eventtap.keyStroke({'control'}, 'c')
 end
 
 hs.hotkey.bind({}, 'f12', vim_esc)
 
--- local hotkey = hs.hotkey.new({}, 'f13', vim_esc)
+-- local hotkey = hs.hotkey.new({}, 'escape', vim_esc)
 -- local wf=hs.window.filter
 -- local wf_terminal = wf.new{'iTerm2'}
 
