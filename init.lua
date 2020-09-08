@@ -3,6 +3,7 @@
 
 require('modules.inputsource_aurora')
 require('modules.vim_esc')
+require('modules.audio_selector')
 
 hs.hints.hintChars = {
   'q', 'w', 'e', 'r',
