@@ -1,6 +1,8 @@
 local function toggleInputDevice()
-  local builtInMic = "Built-in Microphone"
-  local fancyMic = "USB audio CODEC"
+  -- local builtInMic = "Built-in Microphone"
+  -- local fancyMic = "USB audio CODEC"
+  local builtInMic = "MacBook Pro Microphone"
+  local fancyMic = "USB PnP Audio Device"
   local curInput = hs.audiodevice.defaultInputDevice()
 
   if curInput:name() == builtInMic then
@@ -23,8 +25,10 @@ local function toggleInputDevice()
 end
 
 local function toggleOutputDevice()
-  local builtInSpeaker = "Built-in Output"
-  local fancySpeaker = "USB audio CODEC"
+  -- local builtInSpeaker = "Built-in Output"
+  -- local fancySpeaker = "USB audio CODEC"
+  local builtInSpeaker = "MacBook Pro Speakers"
+  local fancySpeaker = "USB PnP Audio Device"
   local curOutput = hs.audiodevice.defaultOutputDevice()
 
   if curOutput:name() == builtInSpeaker then
